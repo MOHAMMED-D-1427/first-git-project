@@ -69,11 +69,14 @@ console.log("La moyenne géométrique est: ", (a * b * c)^(1/3))
 
 // Challenge 9 : Calcul de la distance entre deux points dans un espace 3D =============================================
 
-let x = parseFloat(prompt("Saisi la valeure de x: "))
-let z = parseFloat(prompt("Saisi la valeure de z: "))
-let y = parseFloat(prompt("Saisi la valeure de y: "))
+let x1 = parseFloat(prompt("Saisi la valeure de x1: "))
+let z1 = parseFloat(prompt("Saisi la valeure de z1: "))
+let y1 = parseFloat(prompt("Saisi la valeure de y1: "))
+let x2 = parseFloat(prompt("Saisi la valeure de x2: "))
+let z2 = parseFloat(prompt("Saisi la valeure de z2: "))
+let y2 = parseFloat(prompt("Saisi la valeure de y2: "))
 
-console.log("La distance: ", Math.sqrt((x*2-x*1)**2 + (y*2-y*1)**2 + (z*2-z*1)**2))
+console.log("La distance: ", Math.sqrt((x2-x1)**2 + (y2-y1)**2 + (z2-z1)**2))
 
 // Challenge 10 : Volume d'une sphère =============================================
 

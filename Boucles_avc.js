@@ -16,36 +16,75 @@ let num = parseInt(prompt("Entrez un nombre: "));
 //     console.log(space,star);
 //     star = star+"**";
 // }
+// ----------------------------------- Another way
+// let ligne = prompt("entre le nombre de lignes : "); 
+// for(let i= 1; i<=ligne;i++){
+//  let sp = ""; //declarer empty string
+//  for(let j=1; j<=ligne-i;j++){
+//     sp+=" ";
+//  } 
+//  for(let j=1;j<2*i;j++){
+//    sp+="*";
+//  } 
+//  console.log(sp); 
+// }
 
 // Pyramide Upside down ---------------------
 
-star = "*";
-rep = num    
-let space = "";
-for(let x = 1; x < num+2; x++){
-    for(let i = 0; i < rep;i++){
-        star = star+"**";
+// star = "*";
+// rep = num    
+// let space = "";
+// for(let x = 1; x < num+2; x++){
+//     for(let i = 0; i < rep;i++){
+//         star = star+"**";
+//     }
+//     rep -= 1;
+//     console.log(space,star);
+//     space +=" ";
+//     star = "*"
+// }
+
+// Empty Pyramide ---------------------
+
+star = "*"
+rep = num
+rep2 = 1
+for(x = 0; x < num; x++){
+    let space = "";
+    let spaceIn = "";
+    for(i = 1; i < rep; i++){
+        space += " ";
     }
-    rep -= 1;
-    console.log(space,star);
-    space +=" ";
-    star = "*"
+    rep--
+    if(x > 0){
+        for(y = 1; y < rep2*2; y++){
+            spaceIn += " ";
+        }
+        rep2 ++;
+        spaceIn += "*";
+    }
+    console.log(space+star+spaceIn)
 }
+
 
 // Challenge 3 : Affichage des Nombres Premiers =============================================
 
-// let num = parseInt(prompt("Entrez un nombre: "));
+// num = parseInt(prompt("Entrez un nombre: "));
+
 // for(let x = 2; x <= num; x++){
-//     let premier = true;
-//     for(let i = 2; i <= num; i++){
-//         if(num % i === 0){
-//             premier = false;
-//             // break;
+//     let is_premier = true;
+//     let n_premier = 0;
+//     for(let i = 2; i <= 2; i++){
+//         n_premier = x;
+//         if(x % i == 0){
+//             is_premier = false;
+//             break;
 //         }
 //     }
-//     if(premier){
-//         console.log(i)
+//     if(is_premier){
+//         console.log(n_premier)
 //     }
+//     is_premier = true
 // }
 
 // Challenge 4 : Inversion d'un Entier =============================================

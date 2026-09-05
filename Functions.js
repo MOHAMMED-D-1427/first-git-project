@@ -108,7 +108,7 @@ function fibonacci(n){
 // fibonacci(num)
 
 // Challenge 7 : Fonction de Compte à Rebours ======================================
-// num = parseInt(prompt("Entrez un nombre : "))
+num = parseInt(prompt("Entrez un nombre : "))
 
 function compte_rebours(n){
     console.log(n)
@@ -119,16 +119,16 @@ function compte_rebours(n){
     return compte_rebours(n);
 }
 
-// compte_rebours(num);
+compte_rebours(num);
 
 // Challenge 8 : Fonction de Vérification de Parité ======================================
 
-num = parseInt(prompt("Entrez un nombre : "))
+// num = parseInt(prompt("Entrez un nombre : "))
 
 function isPair(n){
     return n % 2 == 0
 }
 
-console.log(isPair(num))
+// console.log(isPair(num))
 
 

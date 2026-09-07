@@ -134,7 +134,19 @@ for(x = 0; x < num; x++){
 
 
 
-
+// procedure countingSort(A, max):
+//   count := array of zeros [0..max]
+//   for each x in A:
+//     count[x] := count[x] + 1
+//   k := 0
+//   for i := 0 to max do
+//     while count[i] > 0 do
+//       A[k] := i
+//       k := k + 1
+//       count[i] := count[i] - 1
+//     end while
+//   end for
+// end proc
 
 
 
